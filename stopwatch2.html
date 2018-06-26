@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<!  
+    File: stopwatch2.html
+    Purpose: Stopwatch interface 2.
+    Author: Sophia Trump
+    Date: 25 February 2018
+>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="stylesheet2.css">
+        <script type="text/javascript" src="stopwatch%20logic.js"></script>
+        <meta charset="utf-8"> 
+        <meta name="description" content="Stopwatch 2.">     
+        <title> Stopwatch 2 </title>
+        
+        
+        <!BUTTONS ABOVE THE STOPWATCH>
+        <div class = "upperButtons">
+            <button class = "button"; id="button-start"; title = "Start (begin the stopwatch)">Start</button>
+            <button class = "button"; id="button-reset"; title="Reset (set the current time to 0)">Reset</button>
+            <button class = "button"; id="button-stop"; title = "Stop (hold the current stopwatch time stable)">Stop</button>            
+        </div>
+        
+        
+        <!BUTTON ABOVE THE LAPS>
+        <div class = "clearlapsButton">
+            <button class = "button"; id = "button-clearlaps"; title = "Clear Laps (remove all previously-recorded laps)">Clear Laps</button>
+        </div>
+    </head>
+        
+<!------------------------------------------------------------------------------------------------->   
+        <!THE STOPWATCH>
+        <body>
+            <div class="clockSection">    
+                <p class = "clock"; title = "Stop Watch"><span id = "minutes">00</span><span id = "colon">:</span><span id="seconds">00</span><span id = "colon">:</span><span id="tens">00</span></p>       
+                <button class = "button"; id = "button-lap"; title="Lap (record the current stopwatch time)">Lap</button>   
+            </div> 
+            
+        
+        <!THE LAPS>
+            <div class ="lapsSection"; title = "Lap Times (all previously-recorded laps, recorded using the Lap button)">
+                <p class = "lapsTitle"; id="lapsTitle">Lap Times</p>
+                <ul class = "laps"; id="laps"></ul>
+            </div>
+            
+        </body>
+</html>
